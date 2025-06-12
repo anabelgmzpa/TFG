@@ -38,9 +38,7 @@ class Scrap:
     def fechas_datosmacro (indicador, cursor):
         # Saber tabla de las fechas
         tabla= 0
-        if (indicador==253):
-            tabla= 1
-        elif (indicador==254):
+        if (indicador==245):
             tabla= 1
         # Obtener fechas
         cursor.execute(f"SELECT url FROM indicadores WHERE id={indicador}")
